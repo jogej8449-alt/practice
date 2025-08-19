@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111827;
+    color: white;
+    padding-right: 20px;
+}
+
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: #0ea5e9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.2s, transform 0.2s ease;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0284c7;
+    transform: translateY(-5px);
+}
+
+#body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    gap: 5rem;
+
+}
+
+#body h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#body p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.body-img {
+    width: 400px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#footer-section {
+    background-color: #111827;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    color: #1f2937;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.About:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+
+
+@media (max-width:768px) {
+    .Nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        margin: 10px 0;
+        max-width: 200px;
+    }
+
+    @media (max-width: 768px) {
+        #footer-section {
+            flex-direction: column;
+            height: auto;
+            padding: 20px;
+            gap: 10px;
+        }
+    }
+
+    .body-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #body h1 {
+        font-size: 1.5rem;
+    }
+
+    #body p {
+        font-size: 1rem;
+    }
+    .About{
+        font-size:1.2rem;
+        padding:40px 20px;
+    }
+}
